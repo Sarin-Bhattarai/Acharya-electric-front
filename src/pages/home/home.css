@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.home-image {
+  height: 550px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+    url("../../resources/images/cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.over-image {
+  margin-top: 9.5%;
+}
+
+.over-image h1 {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.over-image p {
+  color: #fff;
+  font-size: 22px;
+}
+
+.second-section,
+.third-section,
+.fourth-section,
+.fifth-section {
+  margin-top: 5%;
+}
+
+.ss-heading {
+  text-align: center;
+}
+
+.ss-heading h1 {
+  font-size: 40px;
+  color: #151515;
+  margin-bottom: 10px;
+}
+
+.ss-heading p {
+  font-size: 22px;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 10px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.icon-card {
+  padding: 15px;
+  box-shadow: 0px 0px 8px 0px #ddd8d8;
+  border-radius: 5px;
+}
+
+.icon-card h4 {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 7px;
+}
+
+.icon-card p {
+  text-align: center;
+  font-size: 13px;
+}
+
+.icon-card img {
+  width: 120px;
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 7px;
+}
+
+.details-info {
+  background-color: #ebe7e7;
+  padding: 5px;
+  display: flex;
+  gap: 2.5rem;
+  border-radius: 5px;
+  margin-top: -7px;
+}
+
+.details-info h2 {
+  margin-top: 10px;
+}
+
+.fourth-section h1 {
+  font-size: 40px;
+  color: #151515;
+  margin-bottom: 10px;
+}
+
+.contact-details {
+  margin-top: 7%;
+}
+
+.flex-input {
+  display: flex;
+  gap: 1rem;
+}
+
+.cd-input {
+  width: 260px;
+  height: 55px;
+}
+
+.single-input {
+  width: 93.5%;
+  height: 55px;
+}
+
+.contact-grid img {
+  width: 100%;
+  height: 90%;
+  border-radius: 5px;
+}
+
+.review-grid {
+  margin-top: 6%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.review-card {
+  box-shadow: 0px 0px 8px 0px rgb(216, 213, 213);
+  padding: 15px;
+  padding-top: 18px;
+  background-color: #fff;
+}
+
+.review-card p {
+  text-align: justify;
+  font-size: 13px;
+}
+
+.quote-icon {
+  color: #2569b9;
+}
+
+.person {
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #b98525;
+  border-radius: 50px;
+}
+
+.role-div {
+  margin-top: 10px;
+}
+
+.role-div h1 {
+  margin-bottom: 8px;
+}
+
+.role-div p {
+  line-height: 0;
+  font-size: 16px;
+  margin-bottom: 10px;
+}

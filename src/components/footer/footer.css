@@ -1,0 +1,60 @@
+footer {
+  background-color: #151515;
+  padding: 100px 0 0 0;
+  margin-top: 55px;
+  color: #fff;
+}
+
+.ff-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+}
+
+.ff-grid p {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.ff-grid h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 26px;
+  color: #2569b9;
+}
+
+.ff-grid h1 {
+  text-align: center;
+  color: #2569b9;
+}
+
+.falano p {
+  font-weight: 500;
+}
+
+.fs-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+  margin-top: 7%;
+}
+
+.fs-grid img {
+  width: 150px;
+}
+
+.footer-links {
+  color: #fff;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.footer-links:hover {
+  color: #ff5634;
+}
+
+.fs-grid h5 {
+  font-size: 14px;
+}
