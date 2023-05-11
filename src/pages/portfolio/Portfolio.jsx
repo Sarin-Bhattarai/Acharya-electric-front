@@ -14,7 +14,7 @@ const Portfolio = () => {
             <h1>SAILENDRA ACHARYA</h1>
           </div>
           <div className="yellow">
-            <h4>I'M A UI DEVELOPER</h4>
+            <h4>I'M AN ElECTRICIAN</h4>
           </div>
         </div>
       </div>
