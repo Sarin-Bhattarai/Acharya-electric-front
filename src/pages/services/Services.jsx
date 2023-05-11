@@ -86,7 +86,11 @@ const Services = () => {
             <h4>Fan Repair</h4>
           </div>
         </div>
-
+        <div className="heading">
+          <h2>
+            Other <span className="span">Services</span> From Us
+          </h2>
+        </div>
         <div className="res-grid highMargin">
           {state.services.map((s) => {
             return (
@@ -94,7 +98,13 @@ const Services = () => {
                 <div className="res-details">
                   <ShowService services={s?.image} url="uploads" />
                   <h1>{s?.title}</h1>
-                  <p>{s?.description}</p>
+                  <p
+                    style={{
+                      textAlign: "left",
+                    }}
+                  >
+                    {s?.description}
+                  </p>
                 </div>
               </>
             );

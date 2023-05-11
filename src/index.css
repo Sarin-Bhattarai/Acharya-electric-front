@@ -79,7 +79,7 @@ a {
 
 .showService img {
   width: 140px;
-  border-radius: 50%;
+  border-radius: 20px;
   position: relative;
   top: 20%;
   left: 50%;
