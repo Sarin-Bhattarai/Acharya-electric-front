@@ -3,10 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { MdFacebook } from "react-icons/md";
 import { FaTiktok } from "react-icons/fa";
-import {
-  AiOutlineTwitter,
-  AiOutlineInstagram,
-} from "react-icons/ai";
+import { AiOutlineTwitter, AiOutlineInstagram } from "react-icons/ai";
 import Logo from "../../resources/images/group.png";
 
 const Footer = () => {
@@ -17,26 +14,24 @@ const Footer = () => {
           <div className="ff-grid">
             <div>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dignissimos autem nostrum doloribus amet harum, quis dolorum,
-                fugiat ut atque, quia sed possimus debitis asperiores doloremque
-                nihil beatae minus voluptatum sit? Doloremque ducimus laudantium
-                odio totam illum mollitia, saepe perferendis at sapiente
-                possimus, autem nihil et pariatur facilis odit labore,
-                voluptatem ex assumenda officiis dolores quod quo sequi? Ratione
-                nulla voluptatem tempora fugit eligendi facere corporis
-                assumenda necessitatibus quam eaque. Et ipsam maxime dolorem
-                corporis dolores voluptates consequuntur optio facere inventore!
+                Welcome to our acharya electrical shop, your trusted destination
+                for all your electrical needs. With a wide range of top-notch
+                products, expert repair services, and a friendly team of
+                professionals, we are committed to providing exceptional
+                quality, expertise, and customer satisfaction. From reliable
+                appliances to cutting-edge innovations, we have everything you
+                need to power your world. Experience convenience, reliability,
+                and outstanding service at our trusted and customer-focused
+                electrical shop.
               </p>
             </div>
             <div className="falano">
               <h2>FALANO COMPANY</h2>
               <h1>WANT TO CONTACT US</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-                explicabo, veritatis aperiam inventore consectetur esse aliquid
-                voluptatem doloribus vero accusamus incidunt voluptatum quo
-                dolores officia.
+                If you have any inquiries, service requests, or need expert
+                advice, don't hesitate to reach out to us. We're here to assist
+                you promptly and provide the support you need.
               </p>
             </div>
           </div>

@@ -5,15 +5,19 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 import { getHome } from "../../utils/api/homeApi";
 import ShowImage from "../../utils/data/showImage";
 import IconImage from "../../utils/data/iconImage";
-import Wire from "../../resources/images/wire.png";
-import Bulb from "../../resources/images/bulb.png";
-import Repair from "../../resources/images/repair.png";
-import Laura from "../../resources/images/laura.png";
-import Person2 from "../../resources/images/person2.jpg";
-import Person3 from "../../resources/images/person3.jpg";
+import Wire from "../../resources/images/img3.png";
+import Bulb from "../../resources/images/img4.png";
+import Repair from "../../resources/images/img2.png";
+import Img5 from "../../resources/images/img5.png";
+import Img6 from "../../resources/images/img6.png";
+import Img7 from "../../resources/images/img7.png";
+import Img8 from "../../resources/images/img8.png";
+import Laura from "../../resources/images/review1.jpeg";
+import Person2 from "../../resources/images/review2.jpg";
+import Person3 from "../../resources/images/review3.jpeg";
 import Socket2 from "../../resources/images/contact.png";
 import { Button, Form, Input, DatePicker, Rate } from "antd";
-import Appliance from "../../resources/images/appliance.png";
+import Appliance from "../../resources/images/img1.png";
 const { TextArea } = Input;
 
 const Home = () => {
@@ -44,10 +48,14 @@ const Home = () => {
                   Best <span className="span">Electricity</span> Service
                 </h1>
                 <h1>For Your Family</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  voluptate cumque, vitae odio adipisci dignissimos mollitia
-                  nostrum modi deserunt dolorum!
+                <p
+                  style={{
+                    textAlign: "left",
+                  }}
+                >
+                  Welcome to our electric shop, your one-stop solution for all
+                  things electrical. We offer top-notch products and expert
+                  repair services to meet your needs.
                 </p>
               </div>
             </div>
@@ -59,8 +67,8 @@ const Home = () => {
             <div className="ss-heading">
               <h1>Our Services to Explore</h1>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
-                dicta quidem illum dolores, magni consequuntur.
+                We provide expert repairs for all your electrical goods,
+                ensuring reliable performance and extending their lifespan.
               </p>
             </div>
             <div className="icon-grid topMargin">
@@ -68,66 +76,68 @@ const Home = () => {
                 <img src={Repair} alt="repair" />
                 <h4>Emergency Repairs</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                  ullam aliquam fuga.
+                  Fast and dependable emergency repairs, ensuring your
+                  electrical needs are promptly addressed and resolved.
                 </p>
               </div>
               <div className="icon-card">
                 <img src={Wire} alt="wire" />
                 <h4>Wiring Checkup</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                  ullam aliquam fuga.
+                  Thorough and professional wiring checkup services to ensure
+                  the safety and efficiency of your electrical system.
                 </p>
               </div>
               <div className="icon-card">
                 <img src={Appliance} alt="appliance" />
                 <h4>Appliance Repairs</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                  ullam aliquam fuga.
+                  Expert appliance repair services to restore the functionality
+                  of your electrical appliances quickly and efficiently.
                 </p>
               </div>
               <div className="icon-card">
                 <img src={Bulb} alt="bulb" />
                 <h4>Bulbs Replacement</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                  ullam aliquam fuga.
+                  Efficient and hassle-free bulb replacement services to
+                  brighten up your space with optimal lighting solutions.
                 </p>
               </div>
             </div>
             <div className="icon-grid topMargin">
               <div className="icon-card">
-                <img src={Repair} alt="repair" />
-                <h4>Emergency Repairs</h4>
+                <img src={Img5} alt="repair" />
+                <h4>Electric Switch Repair</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                  ullam aliquam fuga.
+                  Professional electric switch repair services to restore
+                  functionality and ensure smooth operation of your electrical
+                  switches.
                 </p>
               </div>
               <div className="icon-card">
-                <img src={Repair} alt="repair" />
-                <h4>Emergency Repairs</h4>
+                <img src={Img6} alt="repair" />
+                <h4>System Upgrades</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                  ullam aliquam fuga.
+                  Enhance your electrical system with seamless and reliable
+                  system upgrades for improved efficiency and performance.
                 </p>
               </div>
               <div className="icon-card">
-                <img src={Repair} alt="repair" />
-                <h4>Emergency Repairs</h4>
+                <img src={Img7} alt="repair" />
+                <h4>Circuit Breaker Repair</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                  ullam aliquam fuga.
+                  Expert circuit breaker repair services to restore the safety
+                  and proper functioning of your electrical system.
                 </p>
               </div>
               <div className="icon-card">
-                <img src={Repair} alt="repair" />
-                <h4>Emergency Repairs</h4>
+                <img src={Img8} alt="repair" />
+                <h4>Electrical Inspections</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                  ullam aliquam fuga.
+                  Thorough and comprehensive electrical inspections to ensure
+                  safety, code compliance, and optimal performance of your
+                  system.
                 </p>
               </div>
             </div>
@@ -164,8 +174,9 @@ const Home = () => {
                     textAlign: "left",
                   }}
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus sint consequatur praesentium atque quibusdam quo?
+                  Contact us today for all your electrical needs. Our friendly
+                  team is ready to assist you with any inquiries or service
+                  requests.
                 </p>
                 <div className="contact-details">
                   <Form layout="vertical">
@@ -273,20 +284,21 @@ const Home = () => {
             <div className="ss-heading">
               <h1>Our Happy Clients</h1>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
-                dicta quidem.
+                Join our list of satisfied customers who have experienced
+                exceptional service and quality products.
               </p>
             </div>
             <div className="review-grid">
               <div className="review-card">
                 <RiDoubleQuotesL size={28} className="quote-icon" />
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
-                  esse repellat cupiditate saepe perspiciatis provident tempora?
-                  Omnis quae repellendus aut dolorem architecto nesciunt ratione
-                  dolorum magni ullam atque, consequuntur optio, maxime est ea
-                  debitis velit sequi fugit temporibus sit vel sapiente illum
-                  tempore earum! Delectus earum autem ipsum debitis iusto.
+                  I wanted to share my positive experience at your electrical
+                  shop. The staff provided excellent customer service, guiding
+                  me to the right products for my project. The quality of the
+                  items I purchased exceeded my expectations, and the repair
+                  service was quick and reliable. I'm grateful for your
+                  expertise and highly recommend your shop to anyone seeking
+                  top-notch electrical solutions. Thank you for a job well done!
                 </p>
                 <div
                   style={{
@@ -296,7 +308,7 @@ const Home = () => {
                 >
                   <img className="person" src={Laura} alt="person" />
                   <div className="role-div">
-                    <h1>Puja Sharma</h1>
+                    <h1>Devendra Sharma</h1>
                     <p>Customer</p>
                     <Rate defaultValue={4} />
                   </div>
@@ -305,12 +317,14 @@ const Home = () => {
               <div className="review-card">
                 <RiDoubleQuotesL size={28} className="quote-icon" />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  dolorem, assumenda eum ea cupiditate animi qui explicabo neque
-                  veritatis in maiores odit mollitia officiis, at optio impedit
-                  expedita voluptate? Recusandae ut rerum magni molestiae
-                  asperiores. Nihil molestiae modi omnis. Quas culpa nihil modi
-                  omnis laboriosam eveniet, molestias quia qui odit!
+                  I can't express how satisfied I am with my experience at your
+                  electrical shop. The staff went above and beyond to assist me,
+                  ensuring I found the perfect products. The quality of the
+                  items surpassed my expectations, and the repair service was
+                  exceptional. I highly recommend your shop to anyone seeking
+                  reliable and top-quality electrical goods. Thank you for
+                  providing outstanding customer service and products that
+                  exceed expectations!
                 </p>
                 <div
                   style={{
@@ -320,7 +334,7 @@ const Home = () => {
                 >
                   <img className="person" src={Person2} alt="person" />
                   <div className="role-div">
-                    <h1>John Doe</h1>
+                    <h1>Hari Aryal</h1>
                     <p>Customer</p>
                     <Rate defaultValue={4} />
                   </div>
@@ -329,13 +343,13 @@ const Home = () => {
               <div className="review-card">
                 <RiDoubleQuotesL size={28} className="quote-icon" />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                  ea quibusdam accusamus repellendus incidunt molestiae officia
-                  laudantium quam facilis? Iure quasi earum quae tempore maiores
-                  soluta eum odio aliquid totam doloribus nulla nostrum labore
-                  placeat vel hic eveniet natus consequatur, ex dolorem
-                  similique laudantium commodi excepturi. Necessitatibus fugit
-                  quaerat modi.
+                  Wow! I am blown away by the service I received at your
+                  electrical shop. The staff was friendly, knowledgeable, and
+                  helped me find exactly what I needed. The products I purchased
+                  were of top-notch quality, and the repair service was
+                  efficient and reliable. I am beyond satisfied and will
+                  definitely be recommending your shop to friends and family.
+                  Thank you for the outstanding experience!
                 </p>
                 <div
                   style={{
@@ -345,7 +359,7 @@ const Home = () => {
                 >
                   <img className="person" src={Person3} alt="person" />
                   <div className="role-div">
-                    <h1>Samantha Basnet</h1>
+                    <h1>Gokandra Basnet</h1>
                     <p>Customer</p>
                     <Rate defaultValue={4} />
                   </div>

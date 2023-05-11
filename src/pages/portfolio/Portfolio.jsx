@@ -11,7 +11,7 @@ const Portfolio = () => {
           <div className="over-portfolio">
             <h6>dd</h6>
             <h2>MY NAME IS</h2>
-            <h1>PRADIP SHARMA</h1>
+            <h1>SAILENDRA ACHARYA</h1>
           </div>
           <div className="yellow">
             <h4>I'M A UI DEVELOPER</h4>
