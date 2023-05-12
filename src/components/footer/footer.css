@@ -58,3 +58,7 @@ footer {
 .fs-grid h5 {
   font-size: 14px;
 }
+
+.ii-c {
+  cursor: pointer;
+}

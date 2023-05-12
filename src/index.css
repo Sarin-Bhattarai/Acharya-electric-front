@@ -90,6 +90,14 @@ a {
   width: 50px;
 }
 
+.ant-input::placeholder {
+  color: #666666 !important;
+}
+
+.ant-picker-input input::placeholder {
+  color: #666666 !important;
+}
+
 /* --------------Loader--------------  */
 
 .spinner {

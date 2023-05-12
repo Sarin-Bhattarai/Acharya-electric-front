@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { MdFacebook } from "react-icons/md";
 import { FaTiktok } from "react-icons/fa";
-import { AiOutlineTwitter, AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineWhatsApp, AiOutlineInstagram } from "react-icons/ai";
 import Logo from "../../resources/images/group.png";
 
 const Footer = () => {
@@ -26,7 +26,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="falano">
-              <h2>FALANO COMPANY</h2>
+              <h2>ACHARYA ELECTRICS</h2>
               <h1>WANT TO CONTACT US</h1>
               <p>
                 If you have any inquiries, service requests, or need expert
@@ -115,10 +115,10 @@ const Footer = () => {
             <div>
               <h5>FOLLOW ACHARYA ELECTRICS</h5>
               <div className="flex topMargin">
-                <MdFacebook size={28} />
-                <AiOutlineTwitter size={28} />
-                <AiOutlineInstagram size={28} />
-                <FaTiktok size={28} />
+                <MdFacebook className="ii-c" size={28} />
+                <AiOutlineWhatsApp className="ii-c" size={28} />
+                <AiOutlineInstagram className="ii-c" size={28} />
+                <FaTiktok className="ii-c" size={28} />
               </div>
             </div>
           </div>
