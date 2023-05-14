@@ -40,50 +40,27 @@ const Footer = () => {
             <div>
               <img src={Logo} alt="footer" />
             </div>
+
             <div>
               <ul>
                 <li>
-                  <Link className="footer-links" to="/company">
-                    About Company
+                  <Link className="footer-links" to="/about">
+                    About Us
                   </Link>
                 </li>
                 <li>
                   <Link className="footer-links" to="/">
-                    Harry Guest House
+                    Acharya Electrics
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-links" to="/faq">
-                    FAQ
+                  <Link className="footer-links" to="/contact">
+                    Contact
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-links" to="/others">
-                    Other Services
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  <Link className="footer-links" to="/company">
-                    About Company
-                  </Link>
-                </li>
-                <li>
-                  <Link className="footer-links" to="/">
-                    Harry Guest House
-                  </Link>
-                </li>
-                <li>
-                  <Link className="footer-links" to="/faq">
-                    FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link className="footer-links" to="/others">
-                    Other Services
+                  <Link className="footer-links" to="/portfolio">
+                    Portfolio
                   </Link>
                 </li>
               </ul>

@@ -1,10 +1,26 @@
 import React from "react";
 import "./contact.css";
 import Socket2 from "../../resources/images/socket2.jpg";
+import { useNavigate } from "react-router-dom";
 import { Button, Form, Input, DatePicker } from "antd";
+import { useForm } from "@formspree/react";
 const { TextArea } = Input;
 
 const Contact = () => {
+  const [states, handleSubmit] = useForm("xayzvadn");
+  const navigate = useNavigate();
+  if (states.succeeded) {
+    return (
+      <>
+        <div>
+          <p>Thankyou your booking has been placed!</p>;
+        </div>
+        {setTimeout(() => {
+          navigate("/");
+        }, 1000)}
+      </>
+    );
+  }
   return (
     <>
       <section className="global">
@@ -25,7 +41,7 @@ const Contact = () => {
 
           <div className="contact-grid">
             <div className="contact-details">
-              <Form layout="vertical">
+              <Form onFinish={handleSubmit} layout="vertical">
                 <div className="flex-input">
                   <Form.Item
                     name="FullName"

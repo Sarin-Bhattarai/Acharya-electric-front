@@ -16,6 +16,7 @@ import Laura from "../../resources/images/review1.jpeg";
 import Person2 from "../../resources/images/review2.jpg";
 import Person3 from "../../resources/images/review3.jpeg";
 import Socket2 from "../../resources/images/contact.png";
+import { useForm } from "@formspree/react";
 import { Button, Form, Input, DatePicker, Rate } from "antd";
 import Appliance from "../../resources/images/img1.png";
 const { TextArea } = Input;
@@ -25,7 +26,25 @@ const Home = () => {
     homes: [],
     error: null,
   });
+  const [states, handleSubmit] = useForm("xayzvadn");
   const navigate = useNavigate();
+
+  useEffect(() => {
+    fetchHomes();
+  }, []);
+
+  if (states.succeeded) {
+    return (
+      <>
+        <div>
+          <p>Thankyou your booking has been placed!</p>;
+        </div>
+        {setTimeout(() => {
+          navigate("/services");
+        }, 1000)}
+      </>
+    );
+  }
 
   const fetchHomes = () => {
     setState({ ...state, error: null });
@@ -34,9 +53,6 @@ const Home = () => {
       .catch({ ...state, error: null });
   };
 
-  useEffect(() => {
-    fetchHomes();
-  }, []);
   return (
     <>
       <section className="global">
@@ -179,7 +195,7 @@ const Home = () => {
                   requests.
                 </p>
                 <div className="contact-details">
-                  <Form layout="vertical">
+                  <Form onFinish={handleSubmit} layout="vertical">
                     <div className="flex-input">
                       <Form.Item
                         name="FullName"

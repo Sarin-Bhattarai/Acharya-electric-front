@@ -6,6 +6,7 @@ import Header from "./components/header/Header";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Footer from "./components/footer/Footer";
 import Services from "./pages/services/Services";
+import Dashboard from "./pages/dashboard/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -93,6 +94,7 @@ const App = () => {
                   </>
                 }
               />
+              <Route path="/*" exact element={<Dashboard />} />
             </Routes>
           </Router>
         </>
