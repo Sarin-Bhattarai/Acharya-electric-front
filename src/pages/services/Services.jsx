@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 import { getServices } from "../../utils/api/serviceApi";
 import ShowService from "../../utils/data/showService";
 import Service1 from "../../resources/images/service1.png";
-import Service2 from "../../resources/images/service2.png";
-import Service3 from "../../resources/images/service3.png";
+import Service2 from "../../resources/images/frepair.jpg";
+import Service3 from "../../resources/images/prepair.jpg";
 import Service4 from "../../resources/images/service4.png";
 import Service5 from "../../resources/images/service5.png";
 
@@ -53,7 +53,7 @@ const Services = () => {
             className="service-card"
           >
             <img src={Service2} alt="s1" />
-            <h4>Appliance Repair</h4>
+            <h4>Fridge Repair</h4>
           </div>
         </div>
 
@@ -65,7 +65,7 @@ const Services = () => {
         >
           <div className="service-card" id="rr">
             <img src={Service3} alt="s1" />
-            <h4>Bulb Replacement</h4>
+            <h4>Phone Repair</h4>
           </div>
           <div
             style={{
@@ -100,7 +100,7 @@ const Services = () => {
                   <h1>{s?.title}</h1>
                   <p
                     style={{
-                      textAlign: "left",
+                      textAlign: "center",
                     }}
                   >
                     {s?.description}

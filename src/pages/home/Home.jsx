@@ -6,16 +6,16 @@ import { getHome } from "../../utils/api/homeApi";
 import ShowImage from "../../utils/data/showImage";
 import IconImage from "../../utils/data/iconImage";
 import Wire from "../../resources/images/img3.png";
-import Bulb from "../../resources/images/img4.png";
 import Repair from "../../resources/images/img2.png";
-import Img5 from "../../resources/images/img5.png";
 import Img6 from "../../resources/images/img6.png";
-import Img7 from "../../resources/images/img7.png";
-import Img8 from "../../resources/images/img8.png";
 import Laura from "../../resources/images/review1.jpeg";
 import Person2 from "../../resources/images/review2.jpg";
 import Person3 from "../../resources/images/review3.jpeg";
 import Socket2 from "../../resources/images/contact.png";
+import Fridge from "../../resources/images/fridge.png";
+import Mobile from "../../resources/images/cellphone.png";
+import Television from "../../resources/images/television.png";
+import Washing from "../../resources/images/washing-machine.png";
 import { useForm } from "@formspree/react";
 import { Button, Form, Input, DatePicker, Rate } from "antd";
 import Appliance from "../../resources/images/img1.png";
@@ -113,8 +113,8 @@ const Home = () => {
                 </p>
               </div>
               <div className="icon-card">
-                <img src={Bulb} alt="bulb" />
-                <h4>Bulbs Replacement</h4>
+                <img src={Washing} alt="bulb" />
+                <h4>Washing Machine Repair</h4>
                 <p>
                   Efficient and hassle-free bulb replacement services to
                   brighten up your space with optimal lighting solutions.
@@ -123,8 +123,8 @@ const Home = () => {
             </div>
             <div className="icon-grid topMargin">
               <div className="icon-card">
-                <img src={Img5} alt="repair" />
-                <h4>Electric Switch Repair</h4>
+                <img src={Television} alt="repair" />
+                <h4>T.V Repair</h4>
                 <p>
                   Professional electric switch repair services to restore
                   functionality and ensure smooth operation of your electrical
@@ -140,16 +140,16 @@ const Home = () => {
                 </p>
               </div>
               <div className="icon-card">
-                <img src={Img7} alt="repair" />
-                <h4>Circuit Breaker Repair</h4>
+                <img src={Fridge} alt="repair" />
+                <h4>Fridge Repair</h4>
                 <p>
                   Expert circuit breaker repair services to restore the safety
                   and proper functioning of your electrical system.
                 </p>
               </div>
               <div className="icon-card">
-                <img src={Img8} alt="repair" />
-                <h4>Electrical Inspections</h4>
+                <img src={Mobile} alt="repair" />
+                <h4>Mobile Repairing</h4>
                 <p>
                   Thorough and comprehensive electrical inspections to ensure
                   safety, code compliance, and optimal performance of your
