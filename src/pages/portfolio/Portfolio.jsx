@@ -1,6 +1,6 @@
 import React from "react";
 import "./portfolio.css";
-import Portfolio2 from "../../resources/images/portfolio2.jpg";
+import Portfolio2 from "../../resources/images/jjj.png";
 import Wave from "../../resources/images/wave.jpg";
 
 const Portfolio = () => {
@@ -43,26 +43,29 @@ const Portfolio = () => {
                 marginBottom: "15px",
               }}
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-              ullam fugit impedit qui repellendus, culpa, quasi pariatur eius
-              modi iure, magni dolore! Quod nostrum alias rem illo quidem vel,
-              sunt perspiciatis magnam? Error nemo nihil assumenda fugiat. Iure
-              quod fuga quam sed at facere vel sit perferendis quae asperiores
-              eum accusantium, perspiciatis tenetur provident temporibus
-              assumenda optio vitae sunt rerum!
+              Are you facing any electrical issues or looking to upgrade your
+              home with the latest gadgets? Look no further! With over 12 years
+              of experience in the field, I am a professional electrician who
+              can handle all your electrical needs. From repairing and
+              installing various electrical devices and systems, such as
+              fridges, TVs, fans, and mobile phones, to providing comprehensive
+              repair services for your entire household or building's electrical
+              system, I've got you covered.
             </p>{" "}
             <p
               style={{
                 textAlign: "left",
               }}
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              tempora atque ut commodi praesentium voluptates cumque dolores
-              natus obcaecati exercitationem provident vitae itaque vel ea,
-              error possimus ex ducimus fugiat placeat minus, suscipit cum. Nisi
-              illo in eligendi nemo modi, nobis assumenda ex ipsa mollitia
-              officia debitis ut libero, hic corrupti neque cumque deserunt
-              molestias itaque? Laboriosam perferendis quidem nobis?
+              Looking for top-quality electric gadgets? Look no further! I have
+              my own electric shop, serving as a trusted distributor of a wide
+              range of appliances, including fridges, TVs, washing machines, and
+              more. I take pride in offering only the best products known for
+              their durability, performance, and energy efficiency. If you're
+              experiencing issues with your electric gadgets or need assistance
+              with your electrical system, call me at 9857475858 for
+              personalized solutions. Trust Acharya Electrics for a safe and
+              comfortable environment in your home or building.
             </p>
           </div>
         </div>

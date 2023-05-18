@@ -1,7 +1,7 @@
 .portfolio {
   height: 580px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../resources/images/portfolio.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url("../../resources/images/pcover.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -41,8 +41,9 @@
 }
 
 .portfolio-grid img {
-  width: 100%;
+  width: 80%;
   border-radius: 5px;
+  height: 90%;
 }
 
 .pp-res h2 {

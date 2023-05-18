@@ -9,7 +9,7 @@ import Wire from "../../resources/images/img3.png";
 import Repair from "../../resources/images/img2.png";
 import Img6 from "../../resources/images/img6.png";
 import Laura from "../../resources/images/review1.jpeg";
-import Person2 from "../../resources/images/review2.jpg";
+import Person2 from "../../resources/images/sidi.jpg";
 import Person3 from "../../resources/images/review3.jpeg";
 import Socket2 from "../../resources/images/contact.png";
 import Fridge from "../../resources/images/fridge.png";
@@ -324,7 +324,7 @@ const Home = () => {
                 >
                   <img className="person" src={Laura} alt="person" />
                   <div className="role-div">
-                    <h1>Devendra Sharma</h1>
+                    <h1>Devendra Basyal</h1>
                     <p>Customer</p>
                     <Rate defaultValue={4} />
                   </div>
@@ -333,14 +333,13 @@ const Home = () => {
               <div className="review-card">
                 <RiDoubleQuotesL size={28} className="quote-icon" />
                 <p>
-                  I can't express how satisfied I am with my experience at your
-                  electrical shop. The staff went above and beyond to assist me,
-                  ensuring I found the perfect products. The quality of the
-                  items surpassed my expectations, and the repair service was
-                  exceptional. I highly recommend your shop to anyone seeking
-                  reliable and top-quality electrical goods. Thank you for
-                  providing outstanding customer service and products that
-                  exceed expectations!
+                  तपाईको बिजुली पसलमा मेरो अनुभवबाट म कति सन्तुष्ट छु भनी व्यक्त
+                  गर्न सक्दिन। स्टाफहरू मलाई सहयोग गर्न माथि र बाहिर गए, मैले
+                  उत्तम उत्पादनहरू फेला पारेको सुनिश्चित गर्दै। वस्तुहरूको
+                  गुणस्तरले मेरो अपेक्षाहरू पार गर्यो, र मर्मत सेवा असाधारण
+                  थियो। म भरपर्दो र उच्च गुणस्तरको विद्युतीय सामानहरू खोज्ने जो
+                  कोहीलाई तपाईंको पसल सिफारिस गर्छु। उत्कृष्ट ग्राहक सेवा र
+                  अपेक्षाहरू भन्दा बढी उत्पादनहरू प्रदान गर्नुभएकोमा धन्यवाद!
                 </p>
                 <div
                   style={{
@@ -350,7 +349,7 @@ const Home = () => {
                 >
                   <img className="person" src={Person2} alt="person" />
                   <div className="role-div">
-                    <h1>Hari Aryal</h1>
+                    <h1>Arusi Bhattarai</h1>
                     <p>Customer</p>
                     <Rate defaultValue={4} />
                   </div>

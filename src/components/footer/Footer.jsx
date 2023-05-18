@@ -68,23 +68,31 @@ const Footer = () => {
             <div>
               <ul>
                 <li>
-                  <Link className="footer-links" to="/company">
-                    About Company
+                  <Link
+                    className="footer-links"
+                    to="https://www.academia.edu/37047984/Electrical_Installation_and_Maintenance_strand"
+                    target="next"
+                  >
+                    Article 1
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="footer-links"
+                    to="https://www.allaboutcircuits.com/technical-articles/"
+                    target="next"
+                  >
+                    Article 2
                   </Link>
                 </li>
                 <li>
                   <Link className="footer-links" to="/">
-                    Harry Guest House
+                    Home
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-links" to="/faq">
-                    FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link className="footer-links" to="/others">
-                    Other Services
+                  <Link className="footer-links" to="/services">
+                    Services
                   </Link>
                 </li>
               </ul>
