@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { MdFacebook } from "react-icons/md";
 import { FaTiktok } from "react-icons/fa";
 import { AiOutlineWhatsApp, AiOutlineInstagram } from "react-icons/ai";
-import Logo from "../../resources/images/group.png";
+import Logo from "../../resources/images/lg.png";
 
 const Footer = () => {
   return (
