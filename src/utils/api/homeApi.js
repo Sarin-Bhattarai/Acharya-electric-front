@@ -7,3 +7,15 @@ export const getHome = () => {
     method: "GET",
   });
 };
+
+export const postHome = (title, file1, file2) => {
+  const formData = new FormData();
+  formData.append("title", title);
+  formData.append("icon", file1);
+  formData.append("image", file2);
+  return axios.post(`${BaseUrl}/homes`, formData, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  });
+};
