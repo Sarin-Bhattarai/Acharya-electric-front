@@ -11,7 +11,12 @@ import {
   Upload,
   Popconfirm,
 } from "antd";
-import { getHome, postHome } from "../../utils/api/homeApi";
+import {
+  getHome,
+  postHome,
+  editHome,
+  deleteHome,
+} from "../../utils/api/homeApi";
 import IconImage from "../../utils/data/iconImage";
 import ShowImage from "../../utils/data/showImage";
 import { AiFillEdit, AiFillDelete, AiOutlineUpload } from "react-icons/ai";
@@ -59,8 +64,11 @@ const Ahome = () => {
   // create home process
   const handleChange = (name, value, isEdit) => {
     if (isEdit) {
-      setNewImage(value);
-      setNewIcon(value);
+      if (name === "icon") {
+        setNewIcon(value);
+      } else if (name === "image") {
+        setNewImage(value);
+      }
       setState({
         ...state,
         error: null,
@@ -106,6 +114,65 @@ const Ahome = () => {
       });
       message.error("Error adding home service");
     }
+  };
+
+  //for edit home process
+
+  const handleSubmit = (name, id, value) => {
+    const newHomes = [...state.homes];
+    const index = newHomes.findIndex((element) => element?._id === id);
+    newHomes[index] = { ...newHomes[index], [name]: value }; //update the new value of element
+    setState((prev) => {
+      return { ...prev, homes: newHomes };
+    });
+  };
+
+  const handleEditImageUpload = (id, title, icon, image) => {
+    setState({ ...state, updateLoading: true });
+    editHome(id, title, icon, image)
+      .then((response) => {
+        const updatedHomes = state?.homes?.map((home) => {
+          if (home._id === id) {
+            return response?.data;
+          } else {
+            return home;
+          }
+        });
+        setState({
+          ...state,
+          homes: updatedHomes,
+          updateLoading: false,
+          modalVisible: false,
+          newHome: {}, // reset the newHome object in state
+        });
+        message.success("Successfully updated service");
+        setTimeout(() => {
+          navigate("/api/dashboard/services");
+        }, 1000);
+      })
+      .catch((error) => {
+        setState({ ...state, updateLoading: false });
+        message.error(error?.message || "Error updating service");
+      });
+  };
+
+  //for delete process
+  const confirm = (id) => {
+    deleteHome(id)
+      .then((home) => {
+        message.success("Service deleted");
+        setTimeout(() => {
+          navigate("/api/dashboard/services");
+        }, 1000);
+      })
+      .catch((error) => {
+        setState({ ...state, error: error, loading: false });
+        message.error(error?.message || "Error deleting service");
+      });
+  };
+  const cancel = (e) => {
+    console.log(e);
+    message.error("Delete cancelled");
   };
 
   const columns = [
@@ -172,98 +239,89 @@ const Ahome = () => {
                   size={18}
                 />
               </Button>
-              {/* <Modal
-                  title="Edit Region"
-                  okText="Edit"
-                  style={{ top: 20 }}
-                  visible={state.modalVisible[_id._id]}
-                  okButtonProps={{ loading: state.updateLoading }}
-                  onOk={(e) => {
-                    e.preventDefault();
-                    const region = state?.regions?.find(
-                      (el) => el._id === _id._id
-                    );
-                    const { title, description, image } = region;
-                    handleEditImageUpload(
-                      _id._id,
-                      title,
-                      description,
-                      newImage || image
-                    );
-                    setState({ ...state, modalVisible: false });
-                  }}
-                  onCancel={() => setState({ ...state, modalVisible: false })}
-                >
-                  <form>
-                    <label>Title</label>
-                    <TextArea
-                      rows={4}
-                      onChange={(e) =>
-                        handleSubmit("title", _id._id, e.target.value)
-                      }
-                      value={
-                        state?.regions?.find((el) => el._id === _id._id)
-                          ?.title || ""
-                      }
-                      name="title"
-                    />
-                    <label>Description</label>
-                    <TextArea
-                      rows={6}
-                      onChange={(e) =>
-                        handleSubmit("description", _id._id, e.target.value)
-                      }
-                      value={
-                        state?.regions?.find((el) => el._id === _id._id)
-                          ?.description || ""
-                      }
-                      name="description"
-                    />
-                    <br />
-                    <br />
-                    <Upload
-                      accept="image/*"
-                      beforeUpload={(file) => {
-                        handleChange("image", file, true);
-                        return false; // prevent Ant Design from automatically uploading the file
-                      }}
-                      fileList={state?.regions
-                        ?.filter((region) => region._id === _id._id)
-                        ?.map((region) =>
-                          region?.image
-                            ? {
-                                uid: region._id,
-                                name: region?.title,
-                                status: "done",
-                                url: region?.image,
-                              }
-                            : null
-                        )
-                        .filter((region) => region !== null)}
-                      name="image"
-                    >
-                      <Button icon={<AiOutlineUpload />}>Upload Image</Button>
-                    </Upload>
-                  </form>
-                </Modal> */}
+              <Modal
+                title="Edit Service"
+                okText="Edit"
+                style={{ top: 20 }}
+                visible={state.modalVisible[_id._id]}
+                okButtonProps={{ loading: state.updateLoading }}
+                onOk={(e) => {
+                  e.preventDefault();
+                  const home = state?.homes?.find((el) => el._id === _id._id);
+                  const { title, icon, image } = home;
+                  handleEditImageUpload(
+                    _id._id,
+                    title,
+                    newIcon || icon,
+                    newImage || image
+                  );
+                  setState({ ...state, modalVisible: false });
+                }}
+                onCancel={() => setState({ ...state, modalVisible: false })}
+              >
+                <form>
+                  <label>Title</label>
+                  <TextArea
+                    rows={2}
+                    onChange={(e) =>
+                      handleSubmit("title", _id._id, e.target.value)
+                    }
+                    value={
+                      state?.homes?.find((el) => el._id === _id._id)?.title ||
+                      ""
+                    }
+                    name="title"
+                  />
+                  <br />
+                  <br />
+                  <label>Icon</label>
+                  <br />
+                  <br />
+                  <Upload
+                    accept="image/*"
+                    beforeUpload={(file) => {
+                      handleChange("icon", file, true);
+                      return false; // prevent Ant Design from automatically uploading the file
+                    }}
+                    name="icon"
+                  >
+                    <Button icon={<AiOutlineUpload />}>Upload Icon</Button>
+                  </Upload>
+                  <br />
+                  <br />
+                  <label>Image</label>
+                  <br />
+                  <br />
+                  <Upload
+                    accept="image/*"
+                    beforeUpload={(file) => {
+                      handleChange("image", file, true);
+                      return false; // prevent Ant Design from automatically uploading the file
+                    }}
+                    name="image"
+                  >
+                    <Button icon={<AiOutlineUpload />}>Upload Image</Button>
+                  </Upload>
+                </form>
+              </Modal>
             </Space>
 
-            {/* <Popconfirm
-                title="Delete the region"
-                description="Are you sure to delete this region?"
-                onConfirm={() => confirm(_id._id)}
-                onCancel={cancel}
-                okText="Yes"
-                cancelText="No"
-              >
-                <AiFillDelete
-                  style={{
-                    color: "#eb1d0f",
-                    marginLeft: "15px",
-                  }}
-                  size={18}
-                />
-              </Popconfirm> */}
+            <Popconfirm
+              title="Delete the service"
+              description="Are you sure to delete this service?"
+              onConfirm={() => confirm(_id._id)}
+              onCancel={cancel}
+              okText="Yes"
+              cancelText="No"
+            >
+              <AiFillDelete
+                style={{
+                  color: "#eb1d0f",
+                  marginLeft: "15px",
+                }}
+                size={18}
+              />
+            </Popconfirm>
           </Row>
         </>
       ),
