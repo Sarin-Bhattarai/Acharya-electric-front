@@ -8,12 +8,13 @@ import {
 import { v4 as uuidv4 } from "uuid";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCIIdBHmEHpnS6ycD-B4_a3yzs9M1V0fxI",
-  authDomain: "acharya-18b6a.firebaseapp.com",
-  projectId: "acharya-18b6a",
-  storageBucket: "acharya-18b6a.appspot.com",
-  messagingSenderId: "38690962639",
-  appId: "1:38690962639:web:7140d8184dc5f2c70bcbba",
+  apiKey: "AIzaSyAMi4OfOn6-vPH5FXFFWlDk_pq7bbCjhns",
+  authDomain: "acharya-c842a.firebaseapp.com",
+  projectId: "acharya-c842a",
+  storageBucket: "acharya-c842a.appspot.com",
+  messagingSenderId: "413060531669",
+  appId: "1:413060531669:web:fe4193968a2363494c695c",
+  measurementId: "G-R1NYSQVVQ1",
 };
 
 // Initialize Firebase
