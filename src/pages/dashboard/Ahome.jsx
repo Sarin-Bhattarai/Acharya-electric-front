@@ -106,6 +106,9 @@ const Ahome = () => {
         homes: [...state.homes, response?.data],
       });
       message.success("Home Service added");
+      setTimeout(() => {
+        navigate("/api/dashboard/services");
+      }, 1000);
     } catch (error) {
       setState({
         ...state,

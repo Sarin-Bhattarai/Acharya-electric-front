@@ -88,6 +88,9 @@ const Aservices = () => {
         services: [...state.services, response?.data],
       });
       message.success("Service added");
+      setTimeout(() => {
+        navigate("/api/dashboard");
+      }, 1000);
     } catch (error) {
       setState({
         ...state,
