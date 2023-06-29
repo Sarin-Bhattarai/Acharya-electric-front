@@ -263,6 +263,32 @@ svg {
     margin-top: 3px !important;
   }
 
+  .home-image {
+    min-height: 94vh !important;
+  }
+
+  .over-portfolio h1 {
+    font-size: 30px !important;
+  }
+
+  .over-portfolio h2 {
+    margin-top: 70% !important;
+    font-size: 25px !important;
+    margin-bottom: 30px;
+  }
+
+  .yellow {
+    margin-top: 50px !important;
+  }
+
+  .portfolio {
+    height: 580px !important;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+      url("./resources/images/onigiri.png") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+
   .heading h5::after {
     content: "";
     position: absolute;
