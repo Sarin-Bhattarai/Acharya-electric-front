@@ -9,7 +9,7 @@ import Wire from "../../resources/images/img3.png";
 import Repair from "../../resources/images/img2.png";
 import Img6 from "../../resources/images/img6.png";
 import Laura from "../../resources/images/review1.jpeg";
-import Person2 from "../../resources/images/sidi.jpg";
+import Person2 from "../../resources/images/duos.jpg";
 import Person3 from "../../resources/images/review3.jpeg";
 import Socket2 from "../../resources/images/contact.png";
 import Fridge from "../../resources/images/fridge.png";
@@ -349,7 +349,7 @@ const Home = () => {
                 >
                   <img className="person" src={Person2} alt="person" />
                   <div className="role-div">
-                    <h1>Arusi Bhattarai</h1>
+                    <h1>Yubraj Timilsina</h1>
                     <p>Customer</p>
                     <Rate defaultValue={4} />
                   </div>
