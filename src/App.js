@@ -6,6 +6,7 @@ import Header from "./components/header/Header";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Footer from "./components/footer/Footer";
 import Services from "./pages/services/Services";
+import Faq from "./pages/faq/Faq";
 import Dashboard from "./pages/dashboard/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -83,6 +84,17 @@ const App = () => {
                   </>
                 }
               />{" "}
+              <Route
+                path="/faq"
+                exact
+                element={
+                  <>
+                    <Header />
+                    <Faq />
+                    <Footer />
+                  </>
+                }
+              />
               <Route
                 path="/portfolio"
                 exact
